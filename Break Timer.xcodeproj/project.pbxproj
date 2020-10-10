@@ -1,0 +1,605 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		17A5EE1C2531720200B9644C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17A5EE1B2531720200B9644C /* AppDelegate.swift */; };
+		17A5EE1E2531720200B9644C /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17A5EE1D2531720200B9644C /* ContentView.swift */; };
+		17A5EE202531720400B9644C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 17A5EE1F2531720400B9644C /* Assets.xcassets */; };
+		17A5EE232531720400B9644C /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 17A5EE222531720400B9644C /* Preview Assets.xcassets */; };
+		17A5EE262531720400B9644C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 17A5EE242531720400B9644C /* Main.storyboard */; };
+		17A5EE322531720500B9644C /* Break_TimerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17A5EE312531720500B9644C /* Break_TimerTests.swift */; };
+		17A5EE3D2531720500B9644C /* Break_TimerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17A5EE3C2531720500B9644C /* Break_TimerUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		17A5EE2E2531720500B9644C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 17A5EE102531720200B9644C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 17A5EE172531720200B9644C;
+			remoteInfo = "Break Timer";
+		};
+		17A5EE392531720500B9644C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 17A5EE102531720200B9644C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 17A5EE172531720200B9644C;
+			remoteInfo = "Break Timer";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		17A5EE182531720200B9644C /* Break Timer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Break Timer.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		17A5EE1B2531720200B9644C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		17A5EE1D2531720200B9644C /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		17A5EE1F2531720400B9644C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		17A5EE222531720400B9644C /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		17A5EE252531720400B9644C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		17A5EE272531720400B9644C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		17A5EE282531720400B9644C /* Break_Timer.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Break_Timer.entitlements; sourceTree = "<group>"; };
+		17A5EE2D2531720500B9644C /* Break TimerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Break TimerTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		17A5EE312531720500B9644C /* Break_TimerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Break_TimerTests.swift; sourceTree = "<group>"; };
+		17A5EE332531720500B9644C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		17A5EE382531720500B9644C /* Break TimerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Break TimerUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		17A5EE3C2531720500B9644C /* Break_TimerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Break_TimerUITests.swift; sourceTree = "<group>"; };
+		17A5EE3E2531720500B9644C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		17A5EE152531720200B9644C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		17A5EE2A2531720500B9644C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		17A5EE352531720500B9644C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		17A5EE0F2531720200B9644C = {
+			isa = PBXGroup;
+			children = (
+				17A5EE1A2531720200B9644C /* Break Timer */,
+				17A5EE302531720500B9644C /* Break TimerTests */,
+				17A5EE3B2531720500B9644C /* Break TimerUITests */,
+				17A5EE192531720200B9644C /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		17A5EE192531720200B9644C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				17A5EE182531720200B9644C /* Break Timer.app */,
+				17A5EE2D2531720500B9644C /* Break TimerTests.xctest */,
+				17A5EE382531720500B9644C /* Break TimerUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		17A5EE1A2531720200B9644C /* Break Timer */ = {
+			isa = PBXGroup;
+			children = (
+				17A5EE1B2531720200B9644C /* AppDelegate.swift */,
+				17A5EE1D2531720200B9644C /* ContentView.swift */,
+				17A5EE1F2531720400B9644C /* Assets.xcassets */,
+				17A5EE242531720400B9644C /* Main.storyboard */,
+				17A5EE272531720400B9644C /* Info.plist */,
+				17A5EE282531720400B9644C /* Break_Timer.entitlements */,
+				17A5EE212531720400B9644C /* Preview Content */,
+			);
+			path = "Break Timer";
+			sourceTree = "<group>";
+		};
+		17A5EE212531720400B9644C /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				17A5EE222531720400B9644C /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		17A5EE302531720500B9644C /* Break TimerTests */ = {
+			isa = PBXGroup;
+			children = (
+				17A5EE312531720500B9644C /* Break_TimerTests.swift */,
+				17A5EE332531720500B9644C /* Info.plist */,
+			);
+			path = "Break TimerTests";
+			sourceTree = "<group>";
+		};
+		17A5EE3B2531720500B9644C /* Break TimerUITests */ = {
+			isa = PBXGroup;
+			children = (
+				17A5EE3C2531720500B9644C /* Break_TimerUITests.swift */,
+				17A5EE3E2531720500B9644C /* Info.plist */,
+			);
+			path = "Break TimerUITests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		17A5EE172531720200B9644C /* Break Timer */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 17A5EE412531720500B9644C /* Build configuration list for PBXNativeTarget "Break Timer" */;
+			buildPhases = (
+				17A5EE142531720200B9644C /* Sources */,
+				17A5EE152531720200B9644C /* Frameworks */,
+				17A5EE162531720200B9644C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Break Timer";
+			productName = "Break Timer";
+			productReference = 17A5EE182531720200B9644C /* Break Timer.app */;
+			productType = "com.apple.product-type.application";
+		};
+		17A5EE2C2531720500B9644C /* Break TimerTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 17A5EE442531720500B9644C /* Build configuration list for PBXNativeTarget "Break TimerTests" */;
+			buildPhases = (
+				17A5EE292531720500B9644C /* Sources */,
+				17A5EE2A2531720500B9644C /* Frameworks */,
+				17A5EE2B2531720500B9644C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				17A5EE2F2531720500B9644C /* PBXTargetDependency */,
+			);
+			name = "Break TimerTests";
+			productName = "Break TimerTests";
+			productReference = 17A5EE2D2531720500B9644C /* Break TimerTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		17A5EE372531720500B9644C /* Break TimerUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 17A5EE472531720500B9644C /* Build configuration list for PBXNativeTarget "Break TimerUITests" */;
+			buildPhases = (
+				17A5EE342531720500B9644C /* Sources */,
+				17A5EE352531720500B9644C /* Frameworks */,
+				17A5EE362531720500B9644C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				17A5EE3A2531720500B9644C /* PBXTargetDependency */,
+			);
+			name = "Break TimerUITests";
+			productName = "Break TimerUITests";
+			productReference = 17A5EE382531720500B9644C /* Break TimerUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		17A5EE102531720200B9644C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1200;
+				LastUpgradeCheck = 1200;
+				TargetAttributes = {
+					17A5EE172531720200B9644C = {
+						CreatedOnToolsVersion = 12.0.1;
+					};
+					17A5EE2C2531720500B9644C = {
+						CreatedOnToolsVersion = 12.0.1;
+						TestTargetID = 17A5EE172531720200B9644C;
+					};
+					17A5EE372531720500B9644C = {
+						CreatedOnToolsVersion = 12.0.1;
+						TestTargetID = 17A5EE172531720200B9644C;
+					};
+				};
+			};
+			buildConfigurationList = 17A5EE132531720200B9644C /* Build configuration list for PBXProject "Break Timer" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 17A5EE0F2531720200B9644C;
+			productRefGroup = 17A5EE192531720200B9644C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				17A5EE172531720200B9644C /* Break Timer */,
+				17A5EE2C2531720500B9644C /* Break TimerTests */,
+				17A5EE372531720500B9644C /* Break TimerUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		17A5EE162531720200B9644C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				17A5EE262531720400B9644C /* Main.storyboard in Resources */,
+				17A5EE232531720400B9644C /* Preview Assets.xcassets in Resources */,
+				17A5EE202531720400B9644C /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		17A5EE2B2531720500B9644C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		17A5EE362531720500B9644C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		17A5EE142531720200B9644C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				17A5EE1E2531720200B9644C /* ContentView.swift in Sources */,
+				17A5EE1C2531720200B9644C /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		17A5EE292531720500B9644C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				17A5EE322531720500B9644C /* Break_TimerTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		17A5EE342531720500B9644C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				17A5EE3D2531720500B9644C /* Break_TimerUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		17A5EE2F2531720500B9644C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 17A5EE172531720200B9644C /* Break Timer */;
+			targetProxy = 17A5EE2E2531720500B9644C /* PBXContainerItemProxy */;
+		};
+		17A5EE3A2531720500B9644C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 17A5EE172531720200B9644C /* Break Timer */;
+			targetProxy = 17A5EE392531720500B9644C /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		17A5EE242531720400B9644C /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				17A5EE252531720400B9644C /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		17A5EE3F2531720500B9644C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		17A5EE402531720500B9644C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+			};
+			name = Release;
+		};
+		17A5EE422531720500B9644C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "Break Timer/Break_Timer.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_ASSET_PATHS = "\"Break Timer/Preview Content\"";
+				DEVELOPMENT_TEAM = WGWADAU573;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = "Break Timer/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.coaxdes.Break-Timer";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		17A5EE432531720500B9644C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "Break Timer/Break_Timer.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_ASSET_PATHS = "\"Break Timer/Preview Content\"";
+				DEVELOPMENT_TEAM = WGWADAU573;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = "Break Timer/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.coaxdes.Break-Timer";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		17A5EE452531720500B9644C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = WGWADAU573;
+				INFOPLIST_FILE = "Break TimerTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.coaxdes.Break-TimerTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Break Timer.app/Contents/MacOS/Break Timer";
+			};
+			name = Debug;
+		};
+		17A5EE462531720500B9644C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = WGWADAU573;
+				INFOPLIST_FILE = "Break TimerTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.coaxdes.Break-TimerTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Break Timer.app/Contents/MacOS/Break Timer";
+			};
+			name = Release;
+		};
+		17A5EE482531720500B9644C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = WGWADAU573;
+				INFOPLIST_FILE = "Break TimerUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.coaxdes.Break-TimerUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TEST_TARGET_NAME = "Break Timer";
+			};
+			name = Debug;
+		};
+		17A5EE492531720500B9644C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = WGWADAU573;
+				INFOPLIST_FILE = "Break TimerUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.coaxdes.Break-TimerUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TEST_TARGET_NAME = "Break Timer";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		17A5EE132531720200B9644C /* Build configuration list for PBXProject "Break Timer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				17A5EE3F2531720500B9644C /* Debug */,
+				17A5EE402531720500B9644C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		17A5EE412531720500B9644C /* Build configuration list for PBXNativeTarget "Break Timer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				17A5EE422531720500B9644C /* Debug */,
+				17A5EE432531720500B9644C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		17A5EE442531720500B9644C /* Build configuration list for PBXNativeTarget "Break TimerTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				17A5EE452531720500B9644C /* Debug */,
+				17A5EE462531720500B9644C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		17A5EE472531720500B9644C /* Build configuration list for PBXNativeTarget "Break TimerUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				17A5EE482531720500B9644C /* Debug */,
+				17A5EE492531720500B9644C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 17A5EE102531720200B9644C /* Project object */;
+}
