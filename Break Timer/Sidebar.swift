@@ -1,5 +1,5 @@
 //
-//  ContentView.swift
+//  Sidebar.swift
 //  Break Timer
 //
 //  Created by Coding on 10/10/20.
@@ -7,15 +7,16 @@
 
 import SwiftUI
 
-struct ContentView: View {
+struct Sidebar: View {
     var body: some View {
-        TimerView()
+        List {
+            Text("Sidebar")
+        }
     }
 }
 
-
-struct ContentView_Previews: PreviewProvider {
+struct Sidebar_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView()
+        Sidebar()
     }
 }

@@ -14,6 +14,10 @@
 		17A5EE262531720400B9644C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 17A5EE242531720400B9644C /* Main.storyboard */; };
 		17A5EE322531720500B9644C /* Break_TimerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17A5EE312531720500B9644C /* Break_TimerTests.swift */; };
 		17A5EE3D2531720500B9644C /* Break_TimerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17A5EE3C2531720500B9644C /* Break_TimerUITests.swift */; };
+		17A5EE692531FABE00B9644C /* TimerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17A5EE682531FABE00B9644C /* TimerView.swift */; };
+		17A5EE6E2532349900B9644C /* BreakTimer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17A5EE6D2532349900B9644C /* BreakTimer.swift */; };
+		17A5EE73253534B200B9644C /* ScreenCover.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17A5EE72253534B200B9644C /* ScreenCover.swift */; };
+		17A5EE782535423900B9644C /* TimerStatusBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17A5EE772535423900B9644C /* TimerStatusBar.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +52,10 @@
 		17A5EE382531720500B9644C /* Break TimerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Break TimerUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		17A5EE3C2531720500B9644C /* Break_TimerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Break_TimerUITests.swift; sourceTree = "<group>"; };
 		17A5EE3E2531720500B9644C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		17A5EE682531FABE00B9644C /* TimerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerView.swift; sourceTree = "<group>"; };
+		17A5EE6D2532349900B9644C /* BreakTimer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BreakTimer.swift; sourceTree = "<group>"; };
+		17A5EE72253534B200B9644C /* ScreenCover.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScreenCover.swift; sourceTree = "<group>"; };
+		17A5EE772535423900B9644C /* TimerStatusBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerStatusBar.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,6 +113,10 @@
 				17A5EE272531720400B9644C /* Info.plist */,
 				17A5EE282531720400B9644C /* Break_Timer.entitlements */,
 				17A5EE212531720400B9644C /* Preview Content */,
+				17A5EE682531FABE00B9644C /* TimerView.swift */,
+				17A5EE6D2532349900B9644C /* BreakTimer.swift */,
+				17A5EE72253534B200B9644C /* ScreenCover.swift */,
+				17A5EE772535423900B9644C /* TimerStatusBar.swift */,
 			);
 			path = "Break Timer";
 			sourceTree = "<group>";
@@ -265,8 +277,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				17A5EE692531FABE00B9644C /* TimerView.swift in Sources */,
+				17A5EE6E2532349900B9644C /* BreakTimer.swift in Sources */,
 				17A5EE1E2531720200B9644C /* ContentView.swift in Sources */,
+				17A5EE782535423900B9644C /* TimerStatusBar.swift in Sources */,
 				17A5EE1C2531720200B9644C /* AppDelegate.swift in Sources */,
+				17A5EE73253534B200B9644C /* ScreenCover.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

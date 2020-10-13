@@ -1,0 +1,32 @@
+//
+//  TimerStatusBar.swift
+//  Break Timer
+//
+//  Created by Coding on 10/12/20.
+//
+
+import SwiftUI
+
+struct TimerStatusBar:View {
+    @Binding var progress:Float
+    
+    var body: some View {
+        ZStack {
+            Circle()
+                .stroke(lineWidth: 20.0)
+                .opacity(0.3)
+                .foregroundColor(Color.red)
+            
+            Circle()
+                .trim(from: 0.0, to: 0.3)
+                .stroke(style: StrokeStyle(lineWidth: 20.0, lineCap: .round, lineJoin: .round))
+                .foregroundColor(Color.red)
+        }
+    }
+}
+
+//struct TimerStatusBar_Previews: PreviewProvider {
+//    static var previews: some View {
+//        TimerStatusBar(progress: 50)
+//    }
+//}
