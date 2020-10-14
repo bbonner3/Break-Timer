@@ -18,6 +18,7 @@
 		17A5EE6E2532349900B9644C /* BreakTimer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17A5EE6D2532349900B9644C /* BreakTimer.swift */; };
 		17A5EE73253534B200B9644C /* ScreenCover.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17A5EE72253534B200B9644C /* ScreenCover.swift */; };
 		17A5EE782535423900B9644C /* TimerStatusBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17A5EE772535423900B9644C /* TimerStatusBar.swift */; };
+		17A5EE7E253549E400B9644C /* BreakTimer.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 17A5EE7C253549E400B9644C /* BreakTimer.xcdatamodeld */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,6 +57,7 @@
 		17A5EE6D2532349900B9644C /* BreakTimer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BreakTimer.swift; sourceTree = "<group>"; };
 		17A5EE72253534B200B9644C /* ScreenCover.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScreenCover.swift; sourceTree = "<group>"; };
 		17A5EE772535423900B9644C /* TimerStatusBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerStatusBar.swift; sourceTree = "<group>"; };
+		17A5EE7D253549E400B9644C /* BreakTimer.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = BreakTimer.xcdatamodel; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -117,6 +119,7 @@
 				17A5EE6D2532349900B9644C /* BreakTimer.swift */,
 				17A5EE72253534B200B9644C /* ScreenCover.swift */,
 				17A5EE772535423900B9644C /* TimerStatusBar.swift */,
+				17A5EE7C253549E400B9644C /* BreakTimer.xcdatamodeld */,
 			);
 			path = "Break Timer";
 			sourceTree = "<group>";
@@ -283,6 +286,7 @@
 				17A5EE782535423900B9644C /* TimerStatusBar.swift in Sources */,
 				17A5EE1C2531720200B9644C /* AppDelegate.swift in Sources */,
 				17A5EE73253534B200B9644C /* ScreenCover.swift in Sources */,
+				17A5EE7E253549E400B9644C /* BreakTimer.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -616,6 +620,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		17A5EE7C253549E400B9644C /* BreakTimer.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				17A5EE7D253549E400B9644C /* BreakTimer.xcdatamodel */,
+			);
+			currentVersion = 17A5EE7D253549E400B9644C /* BreakTimer.xcdatamodel */;
+			path = BreakTimer.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 17A5EE102531720200B9644C /* Project object */;
 }

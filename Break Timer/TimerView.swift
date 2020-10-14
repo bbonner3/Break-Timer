@@ -10,16 +10,17 @@ import SwiftUI
 struct TimerView: View {
     @State private var timeRemaining = 100
     
-    @State var hours:Int = 0
-    @State var minutes:Int = 0
-    @State var seconds:Int = 0
+    @State var hours:Double = 0
+    @State var minutes:Double = 0
+    @State var seconds:Double = 0
     
 //    @State var isPaused:Bool = true
     
     @State var timer:Timer? = nil
     
-    @ObservedObject var breakTimer:BreakTimer = BreakTimer(name: "Normal", color: .green, timerLength: 5)
-    @State var timerStatusValue:Float = 0.0
+    @ObservedObject var breakTimer1:BreakTimer = BreakTimer(name: "Normal", color: .green, timerLength: 60)
+    @ObservedObject var breakTimer2:BreakTimer = BreakTimer(name: "Nano", color: .red, timerLength: 30)
+    @ObservedObject var breakTimer3:BreakTimer = BreakTimer(name: "Micro", color: .blue, timerLength: 15)
     
 //    @State var name:String = ""
     
@@ -31,13 +32,22 @@ struct TimerView: View {
                     .edgesIgnoringSafeArea(.all)
                 
                 VStack {
-                    TimerStatusBar(progress: self.$timerStatusValue)
-                        .frame(width: 150.0, height: 150.0)
+                    TimerStatusBar(status: self.$breakTimer3.status, color: self.$breakTimer3.color)
+                        .frame(width: 150, height: 150)
                         .padding(40.0)
-                    
-                    Spacer()
                 }
-                Text("\($breakTimer.timeRemaining.wrappedValue)")
+                VStack {
+                    TimerStatusBar(status: self.$breakTimer2.status, color: self.$breakTimer2.color)
+                        .frame(width: 200, height: 200)
+                        .padding(40.0)
+                }
+                VStack {
+                    TimerStatusBar(status: self.$breakTimer1.status, color: self.$breakTimer1.color)
+                        .frame(width: 250, height: 250)
+                        .padding(40.0)
+                }
+//                Text("\($breakTimer.timeRemaining.wrappedValue)")
+                Text($breakTimer1.timeRemaining.wrappedValue.description)
                     .font(.largeTitle)
                     .foregroundColor(.white)
                     .padding(.horizontal, 20)
@@ -49,13 +59,17 @@ struct TimerView: View {
             }
             HStack {
                 Button(action: {
-                    if breakTimer.isPaused {
-                        self.breakTimer.startTimer()
+                    if breakTimer1.isPaused {
+                        self.breakTimer1.startTimer()
+                        self.breakTimer2.startTimer()
+                        self.breakTimer3.startTimer()
                     } else {
-                        self.breakTimer.stopTimer()
+                        self.breakTimer1.stopTimer()
+                        self.breakTimer2.stopTimer()
+                        self.breakTimer3.stopTimer()
                     }
                 }, label: {
-                    if breakTimer.isPaused {
+                    if breakTimer1.isPaused {
                         Text("􀊄")
                             .foregroundColor(.green)
 //                            .padding(.all)
@@ -66,8 +80,12 @@ struct TimerView: View {
                     }
                 })
                 Button(action: {
-                    breakTimer.stopTimer()
-                    breakTimer.restartTimer()
+                    breakTimer1.stopTimer()
+                    breakTimer1.restartTimer()
+                    breakTimer2.stopTimer()
+                    breakTimer2.restartTimer()
+                    breakTimer3.stopTimer()
+                    breakTimer3.restartTimer()
                 }, label: {
                     Text("􀛷")
                         .foregroundColor(.red)
@@ -76,7 +94,7 @@ struct TimerView: View {
         }
         .onAppear() {
 //            breakTimer = BreakTimer(name: "Normal", color: .green, timerLength: 60)
-            var breakTimer2 = BreakTimer(name: "Micro", color: .green, timerLength: 30)
+//            var breakTimer2 = BreakTimer(name: "Micro", color: .green, timerLength: 30)
 //            breakTimers?.append(breakTimer)
 //            breakTimers?.append(breakTimer2)
         }

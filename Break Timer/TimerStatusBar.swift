@@ -8,7 +8,8 @@
 import SwiftUI
 
 struct TimerStatusBar:View {
-    @Binding var progress:Float
+    @Binding var status:Float
+    @Binding var color:Color
     
     var body: some View {
         ZStack {
@@ -18,9 +19,13 @@ struct TimerStatusBar:View {
                 .foregroundColor(Color.red)
             
             Circle()
-                .trim(from: 0.0, to: 0.3)
+//                .trim(from: 0.0, to: CGFloat(min(self.status, 1.0)))
+                .trim(from: 0.0, to: CGFloat(self.status))
                 .stroke(style: StrokeStyle(lineWidth: 20.0, lineCap: .round, lineJoin: .round))
-                .foregroundColor(Color.red)
+//                .shadow(radius: 5)
+                .foregroundColor(color)
+                .rotationEffect(.degrees(-90))
+                .animation(.linear)
         }
     }
 }
