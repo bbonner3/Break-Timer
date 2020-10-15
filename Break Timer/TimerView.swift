@@ -14,48 +14,55 @@ struct TimerView: View {
     @State var minutes:Double = 0
     @State var seconds:Double = 0
     
-//    @State var isPaused:Bool = true
+    @State var disabled:Color = Color.gray
     
     @State var timer:Timer? = nil
     
-    @ObservedObject var breakTimer1:BreakTimer = BreakTimer(name: "Normal", color: .green, timerLength: 60)
-    @ObservedObject var breakTimer2:BreakTimer = BreakTimer(name: "Nano", color: .red, timerLength: 30)
-    @ObservedObject var breakTimer3:BreakTimer = BreakTimer(name: "Micro", color: .blue, timerLength: 15)
+    @State var breakTimers:[BreakTimer] = []
     
-//    @State var name:String = ""
+    @ObservedObject var breakTimer1:BreakTimer = BreakTimer(name: "Normal", timerColor: .green, timerLength: 60, breakLength: 10)
+    @ObservedObject var breakTimer2:BreakTimer = BreakTimer(name: "Nano", timerColor: .yellow, timerLength: 30, breakLength: 10)
+    @ObservedObject var breakTimer3:BreakTimer = BreakTimer(name: "Micro", timerColor: .blue, timerLength: 15, breakLength: 10)
     
+    @State var alert = false
     var body: some View {
         VStack {
             ZStack {
                 Color.yellow
                     .opacity(0.1)
                     .edgesIgnoringSafeArea(.all)
-                
-                VStack {
-                    TimerStatusBar(status: self.$breakTimer3.status, color: self.$breakTimer3.color)
-                        .frame(width: 150, height: 150)
-                        .padding(40.0)
+                if !breakTimers.isEmpty {
+                    ForEach(breakTimers.indices) { i in
+                        let size:CGFloat = CGFloat(50 * (i + 1) + 100)
+                        VStack {
+                            TimerStatusBar(status: self.$breakTimers[i].status, color: self.$breakTimers[i].color)
+                                .frame(width: size, height: size)
+                                .padding(40.0)
+                        }
+                    }
                 }
-                VStack {
-                    TimerStatusBar(status: self.$breakTimer2.status, color: self.$breakTimer2.color)
-                        .frame(width: 200, height: 200)
-                        .padding(40.0)
+                if($breakTimer1.onBreak.wrappedValue) {
+                    Text($breakTimer1.timeRemaining.wrappedValue.description)
+                        .font(.largeTitle)
+                        .foregroundColor(.white)
+                        .padding(.horizontal, 20)
+                        .padding(.vertical, 5)
+                        .background(Capsule()
+                            .fill(Color.black)
+                            .opacity(0.75)
+                        )
+                } else {
+                    Text($breakTimer1.timeToBreak.wrappedValue.description)
+                        .font(.largeTitle)
+                        .foregroundColor(.white)
+                        .padding(.horizontal, 20)
+                        .padding(.vertical, 5)
+                        .background(Capsule()
+                            .fill(Color.black)
+                            .opacity(0.75)
+                        )
                 }
-                VStack {
-                    TimerStatusBar(status: self.$breakTimer1.status, color: self.$breakTimer1.color)
-                        .frame(width: 250, height: 250)
-                        .padding(40.0)
-                }
-//                Text("\($breakTimer.timeRemaining.wrappedValue)")
-                Text($breakTimer1.timeRemaining.wrappedValue.description)
-                    .font(.largeTitle)
-                    .foregroundColor(.white)
-                    .padding(.horizontal, 20)
-                    .padding(.vertical, 5)
-                    .background(Capsule()
-                        .fill(Color.black)
-                        .opacity(0.75)
-                    )
+                    
             }
             HStack {
                 Button(action: {
@@ -97,6 +104,10 @@ struct TimerView: View {
 //            var breakTimer2 = BreakTimer(name: "Micro", color: .green, timerLength: 30)
 //            breakTimers?.append(breakTimer)
 //            breakTimers?.append(breakTimer2)
+            breakTimers.append(self.breakTimer3)
+            breakTimers.append(self.breakTimer2)
+            breakTimers.append(self.breakTimer1)
+            
         }
 //        .onReceive(timer) { time in
 //            if self.timeRemaining > 0 {

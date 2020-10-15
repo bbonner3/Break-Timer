@@ -3,9 +3,9 @@
     <entity name="Timers" representedClassName="Timers" syncable="YES" codeGenerationType="class">
         <attribute name="break_length" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
         <attribute name="color" optional="YES" attributeType="String"/>
-        <attribute name="isBreak" optional="YES" attributeType="Boolean" usesScalarValueType="YES"/>
         <attribute name="isPaused" optional="YES" attributeType="Boolean" usesScalarValueType="YES"/>
         <attribute name="name" optional="YES" attributeType="String"/>
+        <attribute name="onBreak" optional="YES" attributeType="Boolean" usesScalarValueType="YES"/>
         <attribute name="timer_length" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
     </entity>
     <elements>
